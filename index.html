@@ -1,0 +1,669 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday Muntaha ❤️</title>
+
+<style>
+  #lockScreen {
+ position:fixed;
+ inset:0;
+ z-index:9999;
+ background:linear-gradient(135deg,#210e2d,#71365c);
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ text-align:center;
+ gap:20px;
+ padding:20px;
+}
+
+#lockScreen input {
+ padding:14px;
+ border-radius:25px;
+ border:none;
+ text-align:center;
+}
+
+#lockScreen button {
+ padding:13px 30px;
+ border:none;
+ border-radius:25px;
+ background:#f5d9a6;
+ color:#29172a;
+}
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+}
+
+body {
+ background:#170d20;
+ color:white;
+ font-family:Poppins,sans-serif;
+ overflow-x:hidden;
+}
+
+body::before {
+ content:"";
+ position:fixed;
+ inset:0;
+ pointer-events:none;
+ background-image:
+ radial-gradient(2px 2px at 20% 30%,white 90%,transparent),
+ radial-gradient(2px 2px at 80% 20%,#f6d8a5 90%,transparent),
+ radial-gradient(2px 2px at 50% 80%,white 90%,transparent);
+ background-size:180px 180px;
+ animation:stars 5s infinite alternate;
+ z-index:0;
+}
+
+@keyframes stars {
+ from {opacity:.3}
+ to {opacity:1}
+}
+
+nav {
+ position:sticky;
+ top:0;
+ z-index:100;
+ background:#1b1024eF;
+ padding:15px;
+ display:flex;
+ justify-content:center;
+ flex-wrap:wrap;
+ gap:12px;
+ border-bottom:1px solid #ffffff20;
+}
+
+nav button {
+ background:transparent;
+ border:1px solid #d7ac86;
+ color:#f5d6ad;
+ padding:9px 14px;
+ border-radius:25px;
+ cursor:pointer;
+}
+
+nav button:hover {
+ background:#d7ac86;
+ color:#241327;
+}
+
+section {
+ min-height:100vh;
+ display:none;
+ position:relative;
+ z-index:1;
+ padding:65px 20px;
+ text-align:center;
+ align-items:center;
+ justify-content:center;
+ flex-direction:column;
+}
+
+section.active {
+ display:flex;
+ animation:appear 1s;
+}
+
+@keyframes appear {
+ from {opacity:0;transform:translateY(20px)}
+ to {opacity:1;transform:translateY(0)}
+}
+
+h1 {
+ font-family:'Playfair Display',serif;
+ font-size:clamp(40px,8vw,75px);
+ margin:20px;
+}
+
+h1 span {
+ font-family:'Great Vibes',cursive;
+ color:#f4d39d;
+ font-size:1.35em;
+}
+
+p {
+ color:#d8c6d8;
+ line-height:2;
+ max-width:650px;
+}
+
+.btn {
+ background:linear-gradient(120deg,#f5d9a6,#bd8758);
+ border:none;
+ padding:14px 25px;
+ border-radius:30px;
+ color:#29172a;
+ font-weight:bold;
+ margin:20px;
+ cursor:pointer;
+ text-decoration:none;
+}
+
+.small {
+ color:#e8c38e;
+ letter-spacing:4px;
+ font-size:11px;
+}
+
+/* HOME */
+
+.moon {
+ width:90px;
+ height:90px;
+ border-radius:50%;
+ box-shadow:-15px 8px 0 #f3d9a5;
+ margin:30px;
+}
+
+.gift {
+ width:150px;
+ height:120px;
+ background:linear-gradient(90deg,#77304d,#d57c9c,#77304d);
+ margin:65px auto 30px;
+ position:relative;
+ animation:float 3s infinite;
+}
+
+.gift:before {
+ content:"";
+ position:absolute;
+ width:170px;
+ height:22px;
+ background:#e3a9ad;
+ top:-15px;
+ left:-10px;
+}
+
+.gift:after {
+ content:"♡";
+ position:absolute;
+ font-size:60px;
+ color:#ffe0aa;
+ top:-65px;
+ left:45px;
+}
+
+.ribbon {
+ position:absolute;
+ width:22px;
+ height:100%;
+ background:#e8c28d;
+ left:64px;
+}
+
+@keyframes float {
+ 50% {transform:translateY(-18px)}
+}
+
+/* BALLOONS */
+
+.balloon {
+ position:fixed;
+ bottom:-120px;
+ font-size:45px;
+ animation:rise 12s linear infinite;
+ pointer-events:none;
+ z-index:2;
+}
+
+@keyframes rise {
+ to {transform:translateY(-120vh) rotate(25deg)}
+}
+
+/* SURPRISE */
+
+.big-gift {
+ font-size:110px;
+ background:none;
+ border:none;
+ cursor:pointer;
+ animation:float 2s infinite;
+}
+
+/* LETTER */
+
+.letter {
+ background:#fff4e8;
+ color:#68465a;
+ max-width:650px;
+ padding:35px;
+ border-radius:12px;
+ margin:25px;
+ line-height:2;
+ box-shadow:0 15px 50px #0008;
+}
+
+.letter p {
+ color:#68465a;
+}
+
+.signature {
+ font-family:'Great Vibes',cursive;
+ font-size:32px;
+ color:#a74e75;
+}
+
+/* GALLERY */
+
+.gallery {
+ display:grid;
+ grid-template-columns:repeat(3,1fr);
+ gap:15px;
+ max-width:900px;
+ width:100%;
+ margin:30px auto;
+}
+
+.gallery img {
+ width:100%;
+ height:240px;
+ object-fit:cover;
+ border:6px solid #fff4e8;
+ border-radius:10px;
+ transition:.5s;
+}
+
+.gallery img:hover {
+ transform:scale(1.05);
+}
+
+/* CAKE */
+
+.cake {
+ margin:55px auto;
+ width:260px;
+}
+
+.candles {
+ display:flex;
+ justify-content:center;
+ gap:25px;
+ margin-bottom:15px;
+}
+
+.candles button {
+ font-size:32px;
+ background:none;
+ border:none;
+ cursor:pointer;
+}
+
+.icing {
+ height:30px;
+ background:#ffd9e4;
+ border-radius:50%;
+}
+
+.cake-body {
+ height:110px;
+ background:linear-gradient(90deg,#853454,#dc8ba9,#853454);
+ display:grid;
+ place-items:center;
+ letter-spacing:3px;
+ font-weight:bold;
+}
+
+.plate {
+ height:18px;
+ background:#eee1df;
+ border-radius:50%;
+}
+
+/* CONFETTI */
+
+.confetti {
+ position:fixed;
+ top:-15px;
+ width:9px;
+ height:14px;
+ z-index:200;
+ animation:fall 3s linear forwards;
+ pointer-events:none;
+}
+
+@keyframes fall {
+ to {
+ transform:translateY(110vh) rotate(720deg);
+ opacity:0;
+ }
+}
+
+footer {
+ color:#d5b2c8;
+ font-size:12px;
+ padding:25px;
+ letter-spacing:3px;
+}
+
+@media(max-width:600px) {
+ .gallery {grid-template-columns:1fr}
+ .gallery img {height:270px}
+ nav {gap:5px}
+ nav button {padding:8px;font-size:11px}
+ .letter {padding:22px}
+}
+</style>
+  
+</head>
+<body>
+  <div id="lockScreen">
+  <h1>🔐 A Secret For You</h1>
+  <h2>Only My Chanda Can Enter ❤️</h2>
+  <p>Enter your secret password</p>
+
+  <input type="password" id="pass"
+         placeholder="Enter password">
+
+  <button onclick="unlock()">Unlock ❤️</button>
+  <p id="error"></p>
+  </div>
+</body>
+<body>
+
+<nav>
+<button onclick="showPage('home')">Home</button>
+<button onclick="showPage('surprise')">Surprise</button>
+<button onclick="showPage('letter')">Love Letter</button>
+<button onclick="showPage('gallery')">Memories</button>
+<button onclick="showPage('cake')">Cake</button>
+</nav>
+
+<!-- HOME PAGE -->
+
+<section id="home" class="active">
+
+<div class="moon"></div>
+
+<p class="small">A NIGHT MADE JUST FOR YOU</p>
+
+<h1>Happy Birthday<br>
+<span>Muntaha</span> ♡
+</h1>
+
+<p>
+Tonight, the stars shine a little brighter
+because it's your special day, My Chanda.
+</p>
+
+<div class="gift">
+<div class="ribbon"></div>
+</div>
+
+<button class="btn" onclick="showPage('surprise')">
+OPEN YOUR SURPRISE ♡
+</button>
+
+<p>Your Grizzly Bear ❤️</p>
+
+</section>
+
+<!-- SURPRISE PAGE -->
+
+<section id="surprise">
+
+<p class="small">A SPECIAL SURPRISE</p>
+
+<h1>A Little Magic<br>
+<span>Just For You</span>
+</h1>
+
+<button class="big-gift" onclick="openGift()">
+🎁
+</button>
+
+<h2 id="surpriseText">Tap the gift to open it</h2>
+
+<button class="btn" onclick="showPage('letter')">
+NEXT SURPRISE →
+</button>
+
+</section>
+
+<!-- LETTER PAGE -->
+
+<section id="letter">
+
+<p class="small">WORDS FROM MY HEART</p>
+
+<h1>My Dearest <span>Muntaha</span></h1>
+
+<div class="letter">
+
+<p class="signature">My Chanda ♡</p>
+
+<p>
+Happy Birthday, My Chanda.
+May your beautiful smile never fade.
+May every new day bring you happiness,
+peace and countless beautiful moments.
+</p>
+
+<p>
+I pray Allah protects you from every sadness,
+blesses your life with success, and gives you
+strength to achieve all your dreams.
+</p>
+
+<p>
+You deserve kindness, respect and happiness.
+Keep shining like the brightest star.
+</p>
+
+<p class="signature">
+With Love,<br>
+Your Grizzly Bear ♡
+</p>
+
+</div>
+
+<button class="btn" onclick="showPage('gallery')">
+OUR MEMORIES →
+</button>
+
+</section>
+
+<!-- GALLERY PAGE -->
+
+<section id="gallery">
+
+<p class="small">LITTLE MOMENTS</p>
+
+<h1>Beautiful <span>Memories</span></h1>
+
+<p>Add your favourite photographs below.</p>
+
+<div class="gallery">
+
+<img src="Image/IMG-20261025-WA0035.jpg" alt="Memory 1"><img src="./Image/IMG-20261025-WA0035.jpg"
+     style="width:250px;border:3px solid white;">
+<img src="Image/IMG-20261025-WA0025(0).jpg" alt="Memory 2"><img src="./Image/IMG-20261025-WA0025(0).jpg"
+     style="width:250px;border:3px solid white;">
+<img src="Image/IMG-20261024-WA0006.jpg" alt="Memory 3"><img src="./Image/IMG-20261024-WA0006.jpg"
+     style="width:250px;border:3px solid white;">
+
+</div>
+
+<button class="btn" onclick="showPage('cake')">
+BIRTHDAY CAKE →
+</button>
+
+</section>
+
+<!-- CAKE PAGE -->
+
+<section id="cake">
+
+<p class="small">YOUR SPECIAL MOMENT</p>
+
+<h1>Make A <span>Wish</span></h1>
+
+<p>Tap each candle to blow it out.</p>
+
+<div class="cake">
+
+<div class="candles">
+<button onclick="blow(this)">🔥</button>
+<button onclick="blow(this)">🔥</button>
+<button onclick="blow(this)">🔥</button>
+</div>
+
+<div class="icing"></div>
+
+<div class="cake-body">
+HAPPY BIRTHDAY
+</div>
+
+<div class="plate"></div>
+
+</div>
+
+<h3 id="wish">Three candles, three wishes ❤️</h3>
+
+<button class="btn" onclick="finalWish()">
+REVEAL YOUR WISH
+</button>
+
+<h2 id="finalMessage"></h2>
+
+<button class="btn" onclick="showPage('home')">
+CELEBRATE AGAIN ↻
+</button>
+
+</section>
+
+<footer>
+MADE WITH LOVE ♡ FOR MUNTAHA
+</footer>
+
+<script>
+function unlock() {
+ const password = document.getElementById("pass").value;
+
+ if(password === "Muntaha123") {
+   document.getElementById("lockScreen").style.display="none";
+   confetti(100);
+ } else {
+   document.getElementById("error").innerHTML =
+   "Wrong password! Try again ❤️";
+ }
+}
+/* PAGE NAVIGATION */
+
+function showPage(id) {
+
+ document.querySelectorAll("section")
+ .forEach(s => s.classList.remove("active"));
+
+ document.getElementById(id)
+ .classList.add("active");
+
+ window.scrollTo(0,0);
+}
+
+/* CONFETTI */
+
+function confetti(amount=100) {
+
+ const colors=[
+ "#f5d9a6",
+ "#dc8da9",
+ "#fff0d6",
+ "#b78ab9"
+ ];
+
+ for(let i=0;i<amount;i++) {
+
+  let piece=document.createElement("div");
+
+  piece.className="confetti";
+
+  piece.style.left=Math.random()*100+"vw";
+
+  piece.style.background=
+  colors[Math.floor(Math.random()*colors.length)];
+
+  piece.style.animationDelay=Math.random()*2+"s";
+
+  document.body.appendChild(piece);
+
+  setTimeout(()=>piece.remove(),5000);
+ }
+}
+
+/* FLOATING BALLOONS */
+
+function balloons() {
+
+ let b=document.createElement("div");
+
+ b.className="balloon";
+
+ b.innerHTML=["🎈","💗","✨"][Math.floor(Math.random()*3)];
+
+ b.style.left=Math.random()*100+"vw";
+
+ b.style.animationDuration=(8+Math.random()*7)+"s";
+
+ document.body.appendChild(b);
+
+ setTimeout(()=>b.remove(),15000);
+}
+
+setInterval(balloons,1200);
+
+/* OPEN GIFT */
+
+function openGift() {
+
+ document.querySelector(".big-gift").innerHTML="✨💝✨";
+
+ document.getElementById("surpriseText").innerHTML=
+ "Happy Birthday My Chanda! You are a beautiful blessing. ❤️";
+
+ confetti(120);
+}
+
+/* BLOW CANDLES */
+
+function blow(candle) {
+
+ if(candle.dataset.blown) return;
+
+ candle.dataset.blown="yes";
+ candle.innerHTML="♡";
+ candle.style.opacity=".35";
+
+ let candles=document.querySelectorAll(".candles button");
+
+ if([...candles].every(c=>c.dataset.blown)) {
+
+  document.getElementById("wish").innerHTML=
+  "All candles are out! Make your beautiful wish! ❤️";
+
+  confetti(80);
+ }
+}
+
+/* FINAL BIRTHDAY MESSAGE */
+
+function finalWish() {
+
+ document.getElementById("finalMessage").innerHTML=
+ "May Allah bless your life with peace, health, success and endless happiness. Happy Birthday, My Chanda! ❤️";
+
+ confetti(180);
+}
+
+</script>
+
+</body>
+</html>
